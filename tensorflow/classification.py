@@ -19,7 +19,7 @@ parser.add_argument('--allocated', type=float, default=1000,
                     help='Allocated GPU memory.')
 FLAGS, unparsed = parser.parse_known_args()
 # fraction = FLAGS.allocated / FLAGS.total * 0.85
-fraction = round( FLAGS.allocated / FLAGS.total , 1 )
+fraction = round( FLAGS.allocated / FLAGS.total , 3 )
 
 print("Total GPU Memory: ", FLAGS.total)
 print("Allocated GPU Memory: ", FLAGS.allocated)
